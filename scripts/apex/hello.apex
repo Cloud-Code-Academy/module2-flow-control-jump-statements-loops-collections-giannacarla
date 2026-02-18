@@ -1,10 +1,30 @@
-// Use .apex files to store anonymous Apex.
-// You can execute anonymous Apex in VS Code by selecting the
-//     apex text and running the command:
-//     SFDX: Execute Anonymous Apex with Currently Selected Text
-// You can also execute the entire file by running the command:
-//     SFDX: Execute Anonymous Apex with Editor Contents
+ 
+        // Initialize a Map
+        Map<String, Integer> employeeSalaries = new Map<String, Integer>();
 
-string tempvar = 'Enter_your_name_here';
-System.debug('Hello World!');
-System.debug('My name is ' + tempvar);
+        // Add key-value pairs to the Map
+        // add John Doe => 50000
+        // add Jane Smith => 60000
+        // add Sam Brown => 55000
+        // add Alice Johnson => 65000
+        employeeSalaries.put('John Doe', 50000);
+        employeeSalaries.put('Jane Smith', 60000);
+        employeeSalaries.put('Sam Brown', 55000);
+        employeeSalaries.put('Alice Johnson', 65000);
+        // Initialize a list to store the names of high paid employees
+        List<String> highPaidEmployeesList = new List<String>();
+
+        // Iterate over the Map using a for loop
+        for (String employee : employeeSalaries.keySet()) {
+            System.debug('a:'+ employeeSalaries.keySet());
+            Integer salary = employeeSalaries.get(employee);
+            system.debug('what is it?: '+ salary);
+            if (salary > 55000){
+                highPaidEmployeesList.add(employee);
+            }
+        }
+            // Check if the salary of the employee is more than 55000
+                // Add the employee to the list of high paid employees
+
+        // Return the list of high paid employees
+  system.debug('peple:' + highPaidEmployeesList);
