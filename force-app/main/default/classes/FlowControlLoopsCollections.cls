@@ -14,7 +14,7 @@
 * in flow control, loops, and collections. By mastering these concepts, developers will be able to write more
 * efficient and effective code in their Salesforce projects.
 *
-* @author Gianna Carla Delacruz
+* @author Gianna Carla Q. Delacruz
 */
 
 public with sharing class FlowControlLoopsCollections {
@@ -404,7 +404,8 @@ public with sharing class FlowControlLoopsCollections {
         // Iterate over the Map using a for loop
         //I can't put the map directly in the loop, I have to get the key information and the correspondent value. Map Method resources in SF developer helped.
         for (String employee : employeeSalaries.keySet()) {
-            //Creation of an integer variable inside the loop because salary value is a integer, I have to store it somewhere. It's inside because the variable employee only reside inside the loop and because I have to look for each of the employee salary.
+            /*Creation of an integer variable inside the loop because salary value is a integer, I have to store it somewhere.
+            It's inside because the variable employee only reside inside the loop and because I have to look for each of the employee salary.*/
             Integer salary = employeeSalaries.get(employee);
             if (salary > 55000){
                 highPaidEmployeesList.add(employee); 
