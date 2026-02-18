@@ -14,9 +14,8 @@
 * in flow control, loops, and collections. By mastering these concepts, developers will be able to write more
 * efficient and effective code in their Salesforce projects.
 *
-* @author Gianna Carla Q. Delacruz
+* @author Gianna Carla Delacruz.
 */
-
 public with sharing class FlowControlLoopsCollections {
     
     /**
