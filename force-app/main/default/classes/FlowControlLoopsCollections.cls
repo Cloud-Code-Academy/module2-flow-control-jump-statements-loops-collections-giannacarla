@@ -309,7 +309,6 @@ public with sharing class FlowControlLoopsCollections {
         // The variable to store the index of the word
         Integer findIndex = -1;
         //This was tricky to set at -1, tried to set at 0 , but if I put an else statement inside the loop, the -1 result will keep looping every time the word was different than wordToFind. 
-        List<String> wordsList = new List<String>();
         // Loop through the list of words
         for ( Integer i = 0; i < words.size(); i++) {
             if (words[i] == wordToFind) {
